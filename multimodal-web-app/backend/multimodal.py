@@ -103,7 +103,7 @@ class MultimodalVerificationSystem:
         try:
             # Establish connection
             BACKEND_URL = "https://eu.opencv.fr"
-            DEVELOPER_KEY = "7BRQ8i1YWQ2MWM4NjYtMDUyNy00ZTEzLThmZGItZmZmOWRhNjE0ZWFj"
+            DEVELOPER_KEY = ""
 
             # Initialize the SDK
             self.face_sdk = FR(BACKEND_URL, DEVELOPER_KEY)
@@ -120,8 +120,8 @@ class MultimodalVerificationSystem:
             logging.info("Voice encoder initialized successfully")
 
             self.voice_client = QdrantClient(
-                url="https://1c94b6cb-537b-4b28-9fbb-934eb3f2c6d8.europe-west3-0.gcp.cloud.qdrant.io:6333",
-                api_key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIiwiZXhwIjoxNzQ1ODgzNjI3fQ.7ueosobxV8059GgQG3Qal6S1idDFauCkaCvDHLDv-n0"
+                url="",
+                api_key=""
             )
             logging.info("Qdrant client initialized successfully")
 
