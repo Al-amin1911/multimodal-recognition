@@ -37,7 +37,7 @@ def check_cuda() -> bool:
         return False
 
 # Minimal verification system without GUI
-developer_key = "7BRQ8i1YWQ2MWM4NjYtMDUyNy00ZTEzLThmZGItZmZmOWRhNjE0ZWFj"
+developer_key = ""
 backend_url = "https://eu.opencv.fr"
 face_threshold = 0.8
 voice_threshold = 0.7
@@ -47,8 +47,8 @@ collection_name = "my-collection"
 face_sdk = FR(backend_url, developer_key)
 voice_encoder = VoiceEncoder("cuda" if check_cuda() else "cpu")
 voice_client = QdrantClient(
-    url="https://1c94b6cb-537b-4b28-9fbb-934eb3f2c6d8.europe-west3-0.gcp.cloud.qdrant.io:6333",
-    api_key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIiwiZXhwIjoxNzQ1ODgzNjI3fQ.7ueosobxV8059GgQG3Qal6S1idDFauCkaCvDHLDv-n0"
+    url="",
+    api_key=""
 )
 
 AudioSegment.converter = which("ffmpeg")
